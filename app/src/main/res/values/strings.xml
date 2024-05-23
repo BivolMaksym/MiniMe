@@ -3,7 +3,7 @@
     <!-- String resources -->
     <string name="app_name">MiniMe</string>
     <string name="coin_icon">Coin Icon</string>
-    <string name="notification_icon">Notification Icon</string>
+    <string name="geo_icon">Notification Icon</string>
     <string name="speedometer_icon">Speedometer Icon</string>
     <string name="runner_icon">Runner Icon</string>
     <string name="pause_button">Pause Button</string>
