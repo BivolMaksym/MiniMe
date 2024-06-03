@@ -3,6 +3,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BackpackActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".ItemBuyingActivity" />
+        <activity android:name=".ItemDetailActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".FriendsActivity" />
+        <activity android:name=".DailyTasksActivity" />
+        <activity android:name=".SettingsActivity" />
+
+
 
     </application>
 </manifest>

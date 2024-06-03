@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Item Icon -->
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Item Details Button -->
+    <Button
+        android:id="@+id/item_details_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="Details"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/holo_blue_dark" />
+</RelativeLayout>

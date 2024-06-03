@@ -12,6 +12,8 @@
     <string name="daily_tasks_icon">Daily Tasks Icon</string>
     <string name="backpack_icon">Backpack Icon</string>
     <string name="settings_icon">Settings Icon</string>
+    <string name="back_icon">Back</string>
+    <string name="item_image">Item Image</string>
 
     <!-- Other text resources -->
     <string name="current_status">Current status</string>

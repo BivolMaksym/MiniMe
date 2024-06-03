@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemBuyingActivity">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_back"
+        android:contentDescription="@string/back_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Item Image and Name -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_shoe"
+        android:contentDescription="@string/item_image"
+        android:layout_below="@id/back_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shoe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/item_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Coin Boost -->
+    <TextView
+        android:id="@+id/item_coin_boost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coin boost: 0.1x"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@id/item_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Passive Ability -->
+    <TextView
+        android:id="@+id/item_passive_ability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passive ability: Increases chance of event 'speed up boost' by 10%"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/item_coin_boost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Additional Information -->
+    <TextView
+        android:id="@+id/item_additional_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This item is active only when equipped. After completing quest this item might break with a chance of 4%."
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/item_passive_ability"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Active Status and Break Chance -->
+    <TextView
+        android:id="@+id/item_active_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active status: Equipped"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/item_additional_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/item_break_chance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Break chance: 4%"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/item_active_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Price and Buy Button -->
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70 RC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/item_break_chance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/item_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Bottom navigation bar -->
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

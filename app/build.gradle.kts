@@ -25,6 +25,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+
     }
 }
 
@@ -34,6 +35,10 @@ dependencies {
 
     // Add Google Play services dependency
     implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.0")
+
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
